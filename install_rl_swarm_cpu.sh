@@ -35,7 +35,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt update && sudo apt install -y yarn
 
 # --- Step 5: Install Node.js if not installed ---
-# Check if curl is installed 
+# Check if curl is installed
 if ! command -v curl &> /dev/null; then
     show "curl is not installed. Installing curl..." "progress"
     sudo apt-get update
@@ -100,7 +100,11 @@ fi
 
 # --- Step 6: Clone the RL Swarm repository from gensyn-ai ---
 echo "🔄 Cloning RL Swarm repository from gensyn-ai..."
-cd $HOME && [ -d rl-swarm ] && rm -rf rl-swarm
+cd $HOME
+if [ -d rl-swarm ]; then
+    show "Removing existing 'rl-swarm' directory as it is not empty..." "progress"
+    rm -rf rl-swarm
+fi
 git clone https://github.com/gensyn-ai/rl-swarm.git
 cd rl-swarm
 
@@ -112,7 +116,11 @@ source .venv/bin/activate
 # --- Step 8: Install Python dependencies ---
 echo "📦 Installing Python dependencies..."
 pip install --upgrade pip
-pip install -r requirements.txt
+if [ -f requirements.txt ]; then
+    pip install -r requirements.txt
+else
+    show "requirements.txt not found. Skipping Python dependency installation." "error"
+fi
 
 # --- Step 9: Create a screen session for RL Swarm ---
 echo "🎥 Creating a screen session named 'gensyn'..."
