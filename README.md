@@ -7,9 +7,9 @@ A **one-click installation script** to set up **RL Swarm** on **CPU-only** machi
 
 ## 🛠️ How to Install
 
-Run this command in your terminal:
+Paste the following command into your terminal:
 
-```bash
+```
 curl -s https://raw.githubusercontent.com/fzaamir/rl-swarm-install/main/install_rl_swarm_cpu.sh | bash
 ```
 
