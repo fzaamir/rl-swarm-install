@@ -1,29 +1,40 @@
-### 📄 **README.md** for RL Swarm CPU-Only Installation
-
 ```markdown
 # 🚀 RL Swarm CPU-Only Installation Script
 
-A  one-click installation script** to set up  RL Swarm  on  CPU-only  machines running Ubuntu 20.04+.
+A **one-click installation script** to set up **RL Swarm** on **CPU-only** machines running Ubuntu 20.04+.
+
+---
 
 ## 🛠️ How to Install
 
 Run this command in your terminal:
 
-```curl -s https://raw.githubusercontent.com/fzaamir/rl-swarm-install/main/install_rl_swarm_cpu.sh | bash ```
+```bash
+curl -s https://raw.githubusercontent.com/fzaamir/rl-swarm-install/main/install_rl_swarm_cpu.sh | bash
+```
 
-### What It Does:
+---
+
+## 📦 What It Does
+
 - 🖥️ Updates system packages.
 - 🐍 Installs Python 3.10 and necessary dependencies.
 - 🔄 Sets up RL Swarm with CPU-only optimizations.
-- 🚀 Starts RL Swarm automatically once installed.
+- 🚀 Automatically starts RL Swarm after installation.
 
-## 📋 Requirements:
-- Ubuntu 20.04+ (or compatible).
-- Python 3.10 (automatically installed by the script).
-- 🌐 Active internet connection for downloading dependencies.
+---
+
+## 📋 Requirements
+
+- 🐧 Ubuntu 20.04+ (or compatible).
+- 🐍 Python 3.10 (automatically installed by the script).
+- 🌐 Active internet connection.
+
+---
 
 ## ✅ Success!
 
-Once done, RL Swarm will be **ready to use**! 🎉
+Once installation is complete, **RL Swarm will be ready to use!** 🎉
+```
 
-
+Let me know if you'd like to add badges, licensing info, or links to documentation!
