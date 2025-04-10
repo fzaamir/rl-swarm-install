@@ -1,5 +1,5 @@
 ```markdown
-# 🚀 RL Swarm CPU-Only Installation Script
+## 🚀 RL Swarm CPU-Only Installation Script
 
 A **one-click installation script** to set up **RL Swarm** on **CPU-only** machines running Ubuntu 20.04+.
 
