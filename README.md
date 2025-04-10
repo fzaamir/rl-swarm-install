@@ -37,4 +37,3 @@ curl -s https://raw.githubusercontent.com/fzaamir/rl-swarm-install/main/install_
 Once installation is complete, **RL Swarm will be ready to use!** 🎉
 ```
 
-Let me know if you'd like to add badges, licensing info, or links to documentation!
